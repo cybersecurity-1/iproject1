@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="iproject1.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>about</li>
+            <li>products</li>
+            <li class="logo"><img src="nescafe white.png"  alt=""></li>
+            <li>store</li>
+            <li>contact</li>
+        </ul>
+    </header>
+        <div class="hero-selection">
+            <div class="coffee-section">
+                <h1 id="title">black roast</h1>
+                <div class="bottle-img">
+                    <img src="black1.png"  id="mainimg" alt="">
+                </div>
+                <div class="button-container">
+                    <div class="button">
+                        <span></span>
+                        <button>find in store</button>
+                    </div>
+                    <div class="button">
+                        <span></span>
+                        <button>more details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottle-container">
+                <div class="image">
+                    <img src="pink.png" class="smallimg" alt="">
+                </div>
+                <div class="image">
+                    <img src="purple.png" class="smallimg" alt="">
+                </div>
+                <div class="image">
+                    <img src="brown.png" class="smallimg" alt="">
+                </div>
+                <div class="image">
+                    <img src="black1.png" class="smallimg" alt="">
+                </div>
+            </div>
+        </div>
+        <script>
+             var mainimg = document.getElementById("mainimg");
+        var smallimg = document.getElementsByClassName("smallimg");
+        smallimg[0].onclick = function(){
+            mainimg.src = smallimg[0].src;
+            document.getElementById("title").innerHTML = "cafe choco";
+            document.body.style.background =    ;
+        }
+        smallimg[1].onclick = function(){
+            mainimg.src = smallimg[1].src;
+            document.getElementById("title").innerHTML = "cafe vanilla";
+            document.body.style.background = 'linear-gradient(rgb(81 157 212 / 75%), rgb(23 77 117))';
+        }
+        smallimg[2].onclick = function(){
+            mainimg.src = smallimg[2].src;
+            document.getElementById("title").innerHTML = "the original";
+            document.body.style.background = 'linear-gradient(#f09159,#cc5721)';
+        }
+        smallimg[3].onclick = function(){
+            mainimg.src = smallimg[3].src;
+            document.getElementById("title").innerHTML = "black roast";
+            document.body.style.background = 'linear-gradient(#5a5858,#000000)';
+        }
+                           
+        </script>
+</body>
+</html>
+
